@@ -40,7 +40,7 @@ if st.button("Predict Follow-up Requirement"):
         tumor_size,
         location.index(location),  # Convert location to index
         histology.index(histology),  # Convert histology to index
-        stage.index(stage),  # Convert stage to index
+        stage,  # Convert stage to index
         symptom_1.index(symptom_1),  # Convert symptom_1 to index
         symptom_2.index(symptom_2),  # Convert symptom_2 to index
         symptom_3.index(symptom_3),  # Convert symptom_3 to index
