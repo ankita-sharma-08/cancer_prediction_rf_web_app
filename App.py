@@ -38,20 +38,20 @@ if st.button("Predict Follow-up Requirement"):
         age,
         0 if gender == "Female" else 1,
         tumor_size,
-        location,
-        histology,
-        stage,
-        symptom_1,
-        symptom_2,
-        symptom_3,
-        radiation,
-        surgery,
-        chemo,
+        location.index(location),  # Convert location to index
+        histology.index(histology),  # Convert histology to index
+        stage.index(stage),  # Convert stage to index
+        symptom_1.index(symptom_1),  # Convert symptom_1 to index
+        symptom_2.index(symptom_2),  # Convert symptom_2 to index
+        symptom_3.index(symptom_3),  # Convert symptom_3 to index
+        1 if radiation == "Yes" else 0,
+        1 if surgery == "Yes" else 0,
+        1 if chemo == "Yes" else 0,
         survival_rate,
         tumor_growth_rate,
-        family_history,
-        mri_result, 
-        follow_up
+        1 if family_history == "Yes" else 0,
+        1 if mri_result == "Yes" else 0, 
+        1 if follow_up == "Yes" else 0
     ]])
 
     # Prediction
