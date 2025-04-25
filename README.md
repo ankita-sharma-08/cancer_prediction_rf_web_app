@@ -26,7 +26,7 @@ Family History and MRI Results: Options to indicate family history of cancer and
 
 Predictive Analysis: Once the user inputs the necessary data, the app utilizes a trained Random Forest model to predict the likelihood of the tumor being malignant or benign.
 
-# Results Display: The app provides immediate feedback on the prediction, indicating whether the tumor is likely to be malignant (🔴) or benign (🟢), along with a confidence level based on the input data.
+## Results Display: The app provides immediate feedback on the prediction, indicating whether the tumor is likely to be malignant (🔴) or benign (🟢), along with a confidence level based on the input data.
 
 Technological Stack:
 
