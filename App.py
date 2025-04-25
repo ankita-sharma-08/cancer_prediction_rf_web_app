@@ -12,25 +12,25 @@ st.write("🔍 This app uses a Random Forest Classifier to predict type of cance
 
 # Collect user input
 age = st.number_input("Age", min_value=0, max_value=120, value=30)
-gender = st.selectbox("Gender", options={0: "Female", 1: "Male"})
+gender = st.selectbox("Gender", options=["Female", "Male"])
 tumor_size = st.number_input("Tumor Size (in cm)", min_value=0.0, value=2.5)
-location = st.selectbox("Tumor Location", options={0: "Frontal", 1: "Occipital", 2: "Parietal", 3: "Temporal"})  # Update as per your values
-histology = st.selectbox("Histology Type", options={0: "Astrocytoma", 1: "Glioblastoma", 2: "Medulloblastoma", 3: "Meningioma"})          # Update as per your values
+location = st.selectbox("Tumor Location", options=["Frontal", "Occipital", "Parietal", "Temporal"])  # Update as per your values
+histology = st.selectbox("Histology Type", options=["Astrocytoma", "Glioblastoma", "Medulloblastoma", "Meningioma"])         # Update as per your values
 stage = st.selectbox("Cancer Stage", options={0: "Stage 0", 1: "Stage 1", 2: "Stage 2", 3: "Stage 3", 4: "Stage 4"})
 
-symptom_1 = st.selectbox("Symptom 1", options=[0, 1, 2, 3])
-symptom_2 = st.selectbox("Symptom 2", options=[0, 1, 2, 3])
-symptom_3 = st.selectbox("Symptom 3", options=[0, 1, 2, 3])
-radiation = st.selectbox("Radiation Treatment Received", options=[0, 1])
-surgery = st.selectbox("Surgery Performed", options=[0, 1])
-chemo = st.selectbox("Chemotherapy Received", options=[0, 1])
+symptom_1 = st.selectbox("Symptom 1", options=["Headache", "Nausea", "Fatigue", "Dizziness"])
+symptom_2 = st.selectbox("Symptom 2", options=["Headache", "Nausea", "Fatigue", "Dizziness"])
+symptom_3 = st.selectbox("Symptom 3", options=["Headache", "Nausea", "Fatigue", "Dizziness"])
+radiation = st.selectbox("Radiation Treatment Received", options=["Yes", "No"])
+surgery = st.selectbox("Surgery Performed", options=["Yes", "No"])
+chemo = st.selectbox("Chemotherapy Received", options=["Yes", "No"])
 
 survival_rate = st.number_input("Survival Rate (%)", min_value=0.0, max_value=100.0, value=75.0)
 tumor_growth_rate = st.number_input("Tumor Growth Rate", min_value=0.0, value=1.2)
 
-family_history = st.selectbox("Family History of Cancer", options=[0, 1])
-mri_result = st.selectbox("MRI Result Abnormality", options=[0, 1])
-follow_up = st.selectbox("Follow-Up Required?", options=[0, 1])
+family_history = st.selectbox("Family History of Cancer", options=["Yes", "No"])
+mri_result = st.selectbox("MRI Result Abnormality", options=["Yes", "No"])
+follow_up = st.selectbox("Follow-Up Required?", options=["Yes", "No"])
 
 # Button to predict
 if st.button("Predict Follow-up Requirement"):
