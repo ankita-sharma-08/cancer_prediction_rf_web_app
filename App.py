@@ -7,7 +7,7 @@ with open('random_forest_classifier.pkl', 'rb') as f:
     model = pickle.load(f)
 # Personal Info
 with st.sidebar : 
-    st.left('My Github : github.com/ankita-sharma-08 ')
+    st.right('My Github : github.com/ankita-sharma-08 ')
    
 # Streamlit UI
 st.title("Cancer Prediction Web App By Ankita")
