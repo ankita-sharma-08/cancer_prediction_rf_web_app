@@ -7,8 +7,6 @@ import pickle
 with open('random_forest_classifier.pkl', 'rb') as f:
     model = pickle.load(f)
 
-# Sidebar for personal information
-st.sidebar.right("Personal Information")
 # Streamlit UI
 st.title("Cancer Prediction Web App By Ankita")
 st.write("🔍 This app uses a Random Forest Classifier to predict type of cancer.")
