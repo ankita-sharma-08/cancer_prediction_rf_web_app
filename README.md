@@ -1,6 +1,6 @@
 # Cancer Prediction Web App
 
-# Enter the patient detail, this predict the tumor type
+Enter the patient detail in the following Link , this predict the tumor type
   https://cancer-detection-by.streamlit.app/
 
 # Overview:
