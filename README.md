@@ -1,7 +1,7 @@
 # Cancer Prediction Web App
 
 Enter the patient detail in the following Link , this predict the tumor type
-  https://cancer-detection-by.streamlit.app/
+https://cancer-detection-web-app.streamlit.app/
 
 # Overview:
 The Cancer Prediction Web App is an interactive tool designed to assist healthcare professionals and patients in predicting the type of cancer based on various clinical and demographic factors. Utilizing a Random Forest Classifier, this app leverages machine learning to analyze user inputs and provide insights into the likelihood of benign or malignant tumors.
