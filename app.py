@@ -8,7 +8,7 @@ with open('random_forest_classifier.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Streamlit UI
-st.title("Cancer Prediction Web App By Ankita")
+st.title("Cancer Prediction Web App ")
 st.write("🔍 This app uses a Random Forest Classifier to predict type of cancer.")
 
 # Collect user input
