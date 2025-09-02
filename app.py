@@ -64,4 +64,4 @@ if st.button("Predict Follow-up Requirement"):
         st.success("🟢 Benign Cancer !!!")
 
 
-    st.write("🔍 This app uses a Random Forest Classifier to predict type of cancer.")
+st.write("")    
