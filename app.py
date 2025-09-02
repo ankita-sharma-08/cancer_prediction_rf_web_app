@@ -64,4 +64,4 @@ if st.button("Predict Follow-up Requirement"):
         st.success("🟢 Benign Cancer !!!")
 
 
-st.write("")    
+st.write("This app is intended for informational purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.")    
